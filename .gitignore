@@ -21,3 +21,12 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+.gradle/9.4.1
+.gradle/buildOutputCleanup
+.gradle/file-system.probe
+.gradle
+.idea
+.idea
+*.xml
+build
+.idea
