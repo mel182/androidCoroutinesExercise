@@ -25,3 +25,4 @@ dependencyResolutionManagement {
 rootProject.name = "BirdExample"
 include(":app")
 include(":assignment2")
+include(":cancellationexception")
