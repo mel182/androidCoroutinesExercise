@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/assignment2" />
             <option value="$PROJECT_DIR$/biometriccombiningexercise" />
             <option value="$PROJECT_DIR$/cancellationexception" />
+            <option value="$PROJECT_DIR$/coroutinesynchronizationexample" />
           </set>
         </option>
       </GradleProjectSettings>
