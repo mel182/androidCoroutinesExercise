@@ -4,6 +4,13 @@
     <selectionStates>
       <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
+        <DropdownSelection timestamp="2026-09-27T18:51:49.937643Z">
+          <Target type="DEFAULT_BOOT">
+            <handle>
+              <DeviceId pluginId="PhysicalDevice" identifier="serial=5C020DLCR0002N" />
+            </handle>
+          </Target>
+        </DropdownSelection>
         <DialogSelection />
       </SelectionState>
       <SelectionState runConfigName="assignment2">
@@ -40,6 +47,17 @@
         <DialogSelection />
       </SelectionState>
       <SelectionState runConfigName="coroutinesynchronizationexample">
+        <option name="selectionMode" value="DROPDOWN" />
+        <DropdownSelection timestamp="2026-09-27T18:51:49.937643Z">
+          <Target type="DEFAULT_BOOT">
+            <handle>
+              <DeviceId pluginId="PhysicalDevice" identifier="serial=5C020DLCR0002N" />
+            </handle>
+          </Target>
+        </DropdownSelection>
+        <DialogSelection />
+      </SelectionState>
+      <SelectionState runConfigName="callbackflowexample">
         <option name="selectionMode" value="DROPDOWN" />
         <DropdownSelection timestamp="2026-09-27T18:51:49.937643Z">
           <Target type="DEFAULT_BOOT">

@@ -1,9 +1,9 @@
 [versions]
 agp = "9.2.1"
-coreKtx = "1.19.0"
+coreKtx = "1.19.1"
 junit = "4.13.2"
 junitVersion = "1.3.0"
-viewmodelLifecycleCompose = "2.9.2"
+viewmodelLifecycleCompose = "2.11.0"
 espressoCore = "3.7.0"
 lifecycleRuntimeKtx = "2.11.0"
 activityCompose = "1.13.0"
@@ -12,6 +12,7 @@ composeBom = "2026.09.00"
 coil = "2.7.0"
 biometric = "1.1.0"
 appcompat = "1.8.0"
+gmsLocation = "21.4.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -32,6 +33,8 @@ androidx-compose-material3 = { group = "androidx.compose.material3", name = "mat
 coil-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
 androidx-biometric = { group = "androidx.biometric", name = "biometric", version.ref = "biometric" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+androidx-lifecycle-runtime-compose = { module = "androidx.lifecycle:lifecycle-runtime-compose", version.ref = "lifecycleRuntimeKtx" }
+google-android-gms-play-services-location = { module = "com.google.android.gms:play-services-location", version.ref = "gmsLocation"}
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
