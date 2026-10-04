@@ -1,6 +1,7 @@
 package com.mel182.flowcombineexample.ui
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -17,6 +18,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
@@ -43,6 +45,7 @@ class FlowCombineExampleMainActivity : ComponentActivity() {
 @Composable
 private fun CombineExampleView(modifier: Modifier = Modifier) {
 
+    val context = LocalContext.current
     val viewModel: FormExampleViewModel =
         viewModel(
             factory = FormExampleViewModelFactory()
@@ -73,11 +76,12 @@ private fun CombineExampleView(modifier: Modifier = Modifier) {
         )
 
         Button(
-            onClick = { /*TODO*/ },
+            onClick = {
+                Toast.makeText(context, "Register button clicked!", Toast.LENGTH_SHORT).show()
+            },
             enabled = canRegister
         ) {
             Text(text = "Register")
         }
     }
-
 }
