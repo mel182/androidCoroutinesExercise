@@ -7,7 +7,6 @@ import kotlinx.coroutines.flow.filter
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.runningReduce
 import kotlinx.coroutines.flow.stateIn
-import kotlinx.coroutines.flow.zip
 import java.util.Locale
 
 class TimerViewModel : ViewModel() {

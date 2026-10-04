@@ -1,3 +1,5 @@
+@file:Suppress("UNCHECKED_CAST")
+
 package com.mel182.callbackflowexample.ui
 
 import androidx.lifecycle.ViewModel
