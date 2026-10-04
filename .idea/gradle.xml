@@ -16,6 +16,7 @@
             <option value="$PROJECT_DIR$/cancellationexception" />
             <option value="$PROJECT_DIR$/coroutinesynchronizationexample" />
             <option value="$PROJECT_DIR$/flowinpractice" />
+            <option value="$PROJECT_DIR$/flowzipexample" />
           </set>
         </option>
       </GradleProjectSettings>

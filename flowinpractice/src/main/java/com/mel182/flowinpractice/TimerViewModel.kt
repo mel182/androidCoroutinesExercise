@@ -7,11 +7,13 @@ import kotlinx.coroutines.flow.filter
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.runningReduce
 import kotlinx.coroutines.flow.stateIn
+import kotlinx.coroutines.flow.zip
 import java.util.Locale
 
 class TimerViewModel : ViewModel() {
 
-    val formattedTime = timerAndEmit(100f)
+    val timeEmitFlow = timerAndEmit(100f)
+    val formattedTime = timeEmitFlow
         .runningReduce { totalElapsedTime, newElapsedTime ->
             totalElapsedTime + newElapsedTime
         }.map { totalElapsedTime ->
@@ -33,7 +35,7 @@ class TimerViewModel : ViewModel() {
 
     val totalProgressTimeMillis = 10000L
     // Such progress example can also be used to display an upload progress
-    val progress = timerAndEmit(emissionPerSecond = 100f)
+    val progress = timeEmitFlow
         .runningReduce { totalElapsedTime, newElapsedTime ->
             totalElapsedTime + newElapsedTime
         }.map { totalDuration ->
